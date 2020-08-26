@@ -17,3 +17,7 @@ and the block the contract was created at.
 `node generateYaml.js`
 
 This will create the subgraph.yaml file based on token list in `generateYaml.js`
+
+#### Sandbox
+
+See graph sandbox at [https://thegraph.com/explorer/subgraph/ianlapham/tokenholders?version=current](here).
