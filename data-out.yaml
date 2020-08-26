@@ -5,32 +5,12 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Factory0x56687cf29ac9751ce2a4e764680b6ad7e668942e
+    name: Factory
     network: mainnet
     source:
       address: '0x56687cf29ac9751ce2a4e764680b6ad7e668942e'
       abi: ERC20
       startBlock: 9482300
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.3
-      language: wasm/assemblyscript
-      file: ./src/mappings/index.ts
-      entities:
-        - Token
-      abis:
-        - name: ERC20
-          file: ./abis/ERC20.json
-      eventHandlers:
-        - event: 'Transfer(indexed address,indexed address,uint256)'
-          handler: handleTransfer
-  - kind: ethereum/contract
-    name: Factory0xa19a40fbd7375431fab013a4b08f00871b9a2791
-    network: mainnet
-    source:
-      address: '0xa19a40fbd7375431fab013a4b08f00871b9a2791'
-      abi: ERC20
-      startBlock: 9437878
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
