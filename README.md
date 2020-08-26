@@ -18,6 +18,12 @@ and the block the contract was created at.
 
 This will create the subgraph.yaml file based on token list in `generateYaml.js`
 
+`yarn codegen`
+
+`yarn build`
+
+To deploy, update `package.json` with subgraph endpoint and run deploy script.
+
 #### Sandbox
 
 Try graph sandbox [here](https://thegraph.com/explorer/subgraph/ianlapham/tokenholders?version=current).
