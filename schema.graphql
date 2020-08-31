@@ -9,11 +9,16 @@ type Token @entity {
   decimals: BigInt!
 }
 
-type TokenHolder @entity {
-  # address of owner
+type Balance @entity {
+  # concatenation of user address - token address
   id: ID!
-  # token that this entity is tracking for
+
+  # token address for this balance
   token: Token!
-  # balance (converted to standard units)
-  balance: BigDecimal!
+
+  # address of user / owner
+  user: Bytes!
+
+  # amount owned converted for token decimals
+  amount: BigDecimal!
 }
